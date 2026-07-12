@@ -1,21 +1,17 @@
 spring:
-  main:
-    banner-mode: off
-
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root
 
   jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
     show-sql: true
     properties:
       hibernate:
         format_sql: true
-        dialect: org.hibernate.dialect.MySQL5Dialect
+        dialect: org.hibernate.dialect.MySQLDialect
 
 eureka:
   instance:
